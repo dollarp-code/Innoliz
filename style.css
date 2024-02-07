@@ -15,7 +15,8 @@ body {
 /* Navbar section */
 .navbar {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1205px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +85,6 @@ body {
 
 /* Hero section */
 #showcase {
-    color: #fff;
     background: #352727;
     padding: 2rem;
     position: relative;
@@ -101,7 +101,7 @@ body {
 }
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,4 +151,83 @@ body {
     cursor: pointer;
     background-color: #8580b8;
     opacity: 0.5;
+    transform: translateY(-5px);
+}
+
+/* Main section */
+.section-container {
+    width: 100%;
+}
+
+.two-column {
+    width: 100%;
+    max-width: 1203px;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.two-column .col-left {
+    background-color: #8580b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.two-column .col-left h2 {
+    color: #fff;
+    font-size: 108px;
+    width: 200px;
+    margin-top: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+
+.two-column .col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+.two-column .col-right h2 {
+    color: #3e3e3e;
+    font-family: "Paytone One";
+    font-size: 36px;
+}
+
+.two-column .col-right p {
+    font-size: 18px;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6A6A6A;
+    line-height: 2;
+}
+
+.two-column .col-right button {
+    padding: 12px 24px;
+    background-color: #8580b8;
+    color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.two-column .col-right button:hover {
+    cursor: pointer;
+    background-color: #8580b8;
+    opacity: 0.5;
+    transform: translateY(-5px);
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 60px;
 }
