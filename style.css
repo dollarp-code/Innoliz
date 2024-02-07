@@ -1,0 +1,121 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 16px 0 0 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("assets/Hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Navbar section */
+.navbar {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    color: #918dbc;
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: px;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+.menu a:hover {
+    text-decoration: underline;
+    color: #332d78;
+    
+}
+
+.navbar .btn button {
+    padding: 14px 24px;
+    background-color: #8580b8;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.navbar .btn button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+}
+
+/* Main Section */
+.main-section {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section .welcome-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    color: white;
+}
+
+.welcome-message h1 {
+    font-size: 50px;
+    border-bottom: 2px solid #918dbc;
+    font-family: 'Cormorant Garamond', serif;
+}
+.welcome-message h2 {
+    font-size: 30px;
+    font-style: italic;
+    color: #332d78;
+}
+.welcome-message p {
+    font-size: 16px;
+    line-height: 2rem;
+    text-align: center;
+    
+    
+}
