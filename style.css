@@ -2,7 +2,6 @@ body {
     font-family: "Roboto", sans-serif;
     color: #000;
     width: 100%;
-    height: 80%;
     margin: 0;
     box-sizing: border-box;
     padding: 16px 0 0 0;
@@ -149,6 +148,7 @@ body {
 
 .welcome-message button:hover {
     cursor: pointer;
+    color: black;
     background-color: #8580b8;
     opacity: 0.5;
     transform: translateY(-5px);
@@ -221,13 +221,74 @@ body {
 .two-column .col-right button:hover {
     cursor: pointer;
     background-color: #8580b8;
+    color: #000;
     opacity: 0.5;
     transform: translateY(-5px);
 }
 
+/* Service Section */
+.service-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8580b8;
+    margin: 10px 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.service-section h2 {
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+    padding-top: 10px;
+    /* background-color: #918dbc; */
+}
+
+.service-section .container-icon p {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.service-section .container-icon img {
+    width: 150px;
+    height: 150px;
+}
+
+.service-section .container-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
 /* Footer Section */
-footer {
-    background-color: black;
-    color: white;
-    padding: 60px;
+#main-footer {
+    background: #918dbc;
+    opacity: 0.5;
+    color: #fff;
+    width: 100%;
+    /* height: 170px; */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-footer .footer-container {
+    margin:0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.footer-container .footer-links {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
