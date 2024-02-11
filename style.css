@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f8f0f0;
+    background: #ffff;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -35,12 +35,13 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 1rem;
-    color: #918dbc;
+    color: #FF9A5A;
+    
 }
 
 .navbar .logo img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 .menu {
@@ -57,29 +58,44 @@ body {
     margin-right: 20px;
     text-transform: uppercase;
     font-family: 'Cormorant Garamond', serif;
+    transition: all 0.2s ease-in-out;
     
 }
 .menu a:hover {
-    text-decoration: underline;
-    color: #332d78;
-    
+    /* text-decoration: underline; */
+    color: #FF9A5A;
+    transform: translateX(40px);
 }
 
 .navbar .btn button {
-    padding: 14px 24px;
-    background-color: #8580b8;
-    color: white;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    transition: all 0.2s ease;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+
+.navbar .btn button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 .navbar .btn button:hover {
-    cursor: pointer;
-    color: black;
-    opacity: 0.5;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 /* Hero section */
@@ -119,40 +135,54 @@ body {
 
 .welcome-message h1 {
     font-size: 50px;
-    border-bottom: 2px solid #918dbc;
+    border-bottom: 2px solid #EF4765;
     font-family: 'Cormorant Garamond', serif;
     margin-top: 0;
 }
 .welcome-message h2 {
     font-size: 30px;
     font-style: italic;
-    color: #332d78;
+    color: #EF4765;
 }
 .welcome-message p {
     font-size: 16px;
     line-height: 2rem;
     text-align: center;
     font-weight: bold;
+    
 }
 
 .welcome-message button {
-    padding: 14px 24px;
-    background-color: #8580b8;
-    color: white;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    transition: all 0.2s ease;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
 }
 
+.welcome-message button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+
 .welcome-message button:hover {
-    cursor: pointer;
-    color: black;
-    background-color: #8580b8;
-    opacity: 0.5;
-    transform: translateY(-5px);
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+
+
 
 /* Main section */
 .section-container {
@@ -168,7 +198,7 @@ body {
 }
 
 .two-column .col-left {
-    background-color: #8580b8;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,28 +232,36 @@ body {
 .two-column .col-right p {
     font-size: 18px;
     width: 60%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
     color: #6A6A6A;
     line-height: 2;
 }
 
 .two-column .col-right button {
-    padding: 12px 24px;
-    background-color: #8580b8;
-    color: white;
-    border-radius: 15px;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    border: none;
-    transition: all 0.2s ease;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
 }
 
 .two-column .col-right button:hover {
-    cursor: pointer;
-    background-color: #8580b8;
-    color: #000;
-    opacity: 0.5;
-    transform: translateY(-5px);
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 /* Service Section */
@@ -232,7 +270,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #8580b8;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
     margin: 10px 0;
     font-family: 'Cormorant Garamond', serif;
 }
@@ -258,19 +296,19 @@ body {
 
 .service-section .container-icon {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
     padding: 20px;
 }
 
 
 /* Footer Section */
 #main-footer {
-    background: #918dbc;
-    opacity: 0.5;
+    background: #da6d81;
+    opacity: 0.8;
     color: #fff;
     width: 100%;
-    /* height: 170px; */
+    height: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
