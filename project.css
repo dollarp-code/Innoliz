@@ -8,7 +8,94 @@ body {
     margin: 0 auto;
     padding: 0 16px;
 }
+
 .navbar {
+    width: 100%;
+    max-width: 1205px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffff;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.navbar .logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    color: #FF9A5A;
+    
+}
+
+.navbar .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    transition: all 0.2s ease-in-out;
+    
+}
+.menu a:hover {
+    /* text-decoration: underline; */
+    color: #FF9A5A;
+    transform: translateX(40px);
+}
+
+.navbar .btn button {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+
+.navbar .btn button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.navbar .btn button:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +128,7 @@ body {
 .navbar .right img {
     width: 24px;
     height: 24px;
-}
+} */
 
 .bar1, 
 .bar2, 
@@ -51,6 +138,7 @@ body {
     height: 4px;
     margin: 3px;
     border-radius: 10px;
+    display: none;
 }
 
 .navbar .hamburger {

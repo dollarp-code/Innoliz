@@ -11,6 +11,14 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 /* Navbar section */
 .navbar {
     width: 100%;
