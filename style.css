@@ -414,28 +414,40 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    background: #FFFFFF;
     margin: 10px 0;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Sora', sans-serif;
+    border-radius: 20px;
+    margin: 50px 0;
+    padding: 30px;
 }
 
 .service-section h2 {
     font-size: 50px;
-    color: #fff;
+    color: #0f0f0f;
     margin: 0;
-    padding-top: 10px;
+    padding-top: px;
+    font-weight: 500;
     /* background-color: #918dbc; */
+}
+
+.service-section .container-icon .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-section .container-icon p {
     text-align: center;
-    color: #fff;
+    color: #0f0f0f;
     font-size: 2rem;
 }
 
+
 .service-section .container-icon img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .service-section .container-icon {
