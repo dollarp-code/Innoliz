@@ -11,7 +11,7 @@ body {
 
 .navbar {
     width: 100%;
-    max-width: 1205px;
+    max-width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;

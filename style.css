@@ -1,33 +1,33 @@
 body {
-    font-family: "Roboto", sans-serif;
-    color: #000;
+    font-family: 'Sora', sans-serif;
+    color: #0f0f0f;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    padding: 16px 0 0 0;
-    background-color: #f3f3f3;
+    /* padding: 16px 0 0 0; */
+    background-color: #e4dada;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.container {
+/* .container {
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 16px;
-}
+} */
 
 /* Navbar section */
 .navbar {
     width: 100%;
-    max-width: 1205px;
+    max-width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffff;
+    background: #e9e1e1;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -38,9 +38,9 @@ body {
     align-content: center;
     align-items: center;
     width: 50px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Sora', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 1px;
     line-height: 1rem;
     color: #FF9A5A;
@@ -61,11 +61,12 @@ body {
 }
 .menu a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: #0f0f0f;
+    font-size: 14px;
+    font-weight: 400;
     margin-right: 20px;
     text-transform: uppercase;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Sora', sans-serif;
     transition: all 0.2s ease-in-out;
     
 }
@@ -82,7 +83,7 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -119,12 +120,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 650px;
     opacity: 0.4;
 }
 .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,20 +146,21 @@ body {
 .welcome-message h1 {
     font-size: 50px;
     border-bottom: 2px solid #EF4765;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Sora', sans-serif;
     margin-top: 0;
 }
 .welcome-message h2 {
     font-size: 30px;
     font-style: italic;
     color: #EF4765;
+    font-family: 'Sora', sans-serif;;
 }
 .welcome-message p {
     font-size: 16px;
     line-height: 2rem;
     text-align: center;
     font-weight: bold;
-    
+    font-family: 'Sora', sans-serif;;
 }
 
 .welcome-message button {
@@ -167,7 +170,7 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -193,6 +196,48 @@ body {
 
 
 /* Main section */
+
+.container2 {
+    width: 100%;
+    padding: 20px;
+}
+
+.container2 .element-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .element-container .element>h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 70px;
+    color: #0f0f0f;
+    margin: 15px 0;
+}
+
+.container2 .stacks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+}
+
+.container2 .stacks-container .stack {
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+
 .section-container {
     width: 100%;
 }
