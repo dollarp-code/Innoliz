@@ -31,6 +31,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 3;
+    padding: 0 30px;
 }
 
 .navbar .logo {
@@ -109,7 +110,7 @@ body {
 
 /* Hero section */
 #showcase {
-    background: #352727;
+    /* background: #352727; */
     padding: 2rem;
     position: relative;
 }
@@ -121,7 +122,7 @@ body {
     left: 0;
     width: 100%;
     height: 650px;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 .container {
     width: 100%;
@@ -157,6 +158,7 @@ body {
 }
 .welcome-message p {
     font-size: 16px;
+    letter-spacing: 2px;
     line-height: 2rem;
     text-align: center;
     font-weight: bold;
@@ -183,6 +185,7 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
+  margin-top: 50px;
 }
 
 .welcome-message button:not([disabled]):focus {
@@ -213,7 +216,7 @@ body {
 
 .container2 .element-container .element>h2 {
     font-family: 'Sora', sans-serif;
-    font-size: 52px;
+    font-size: 60px;
     font-weight: 600;
     line-height: 70px;
     color: #0f0f0f;
@@ -240,6 +243,11 @@ body {
 
 .section-container {
     width: 100%;
+    background:#FFFFFF;
+    /* border: 1px solid black; */
+    padding: 50px 30px ;
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .two-column {
@@ -255,6 +263,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     
     
 }
@@ -262,9 +271,9 @@ body {
 .two-column .col-left h2 {
     color: #fff;
     font-size: 108px;
-    width: 200px;
+    width: 50%;
     margin-top: 0;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Sora', sans-serif;
     font-weight: bold;
 }
 
@@ -278,14 +287,14 @@ body {
 
 .two-column .col-right h2 {
     color: #3e3e3e;
-    font-family: "Paytone One";
+    font-family: 'Sora', sans-serif;
     font-size: 36px;
 }
 
 .two-column .col-right p {
     font-size: 18px;
     width: 60%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sora', sans-serif;
     font-weight: 500;
     color: #6A6A6A;
     line-height: 2;
@@ -316,6 +325,88 @@ body {
 .two-column .col-right button:hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+
+/* Partners section */
+.partners-container {
+    width: 100%;
+    background:#FFFFFF;
+    /* border: 1px solid black; */
+    padding: 70px 0;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.partners-container h2 {
+    font-size: 42px;
+    font-family: 'Sora', sans-serif;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 32px 0;
+    column-gap: 16px;
+    row-gap: 32px;
+}
+
+
+.partners-grid img {
+    height: 60px;
+    place-self: center;
+}
+
+/* programs section */
+.programs-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programs-heading h2 {
+    font-size: 42px;
+    font-family: 'Sora', sans-serif;
+    color: #0f0f0f;
+    margin-top: 0;
+}
+
+.programs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    
+}
+
+.programs {
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 300px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.programs h2 {
+    font-family: 'Sora', sans-serif;
+    color: #0f0f0f;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    max-width: 250px;
+    margin-top: 0;
+}
+
+
 
 /* Service Section */
 .service-section {
@@ -357,7 +448,7 @@ body {
 
 /* Footer Section */
 #main-footer {
-    background: #da6d81;
+    background: #1f1e1e;
     opacity: 0.8;
     color: #fff;
     width: 100%;
