@@ -31,19 +31,144 @@
             <a href="/login.html"><button>Login / Sign Up</button></a>
         </div>
     </nav>
-
+    <main>
+        <div class="section-container two-column">
+            <div class="col-left">
+                <h2>Our Mission</h2>
+            </div>
+            <div class="col-right">
+                <h2>At Innovative Elizabeth</h2>
+                <p>"we aim to cultivate a diverse community of innovative thinkers and problem solvers who are equipped to tackle real-world challenges and drive positive change in the tech industry.”</p>
+                <a href="#register"><button>Join Us</button></a>
+            </div>
+        </div>
+        <!-- Register section -->
+        <div class="container-register" id="register">
+            <div class="register-column">
+                <div class="colm-right">
+                    <form action="#">
+                        <label for="Last Name">Last Name*</label>
+                        <input type="text" placeholder="Enter your name" required id="Last Name">
+                        <hr>
+                        <label for="First Name">First Name*</label>
+                        <input type="text" placeholder="Enter your first name" required id="First Name">
+                        <hr>
+                        <label for="Phone Number">Phone Number*</label>
+                        <input type="number" placeholder="Enter your phone number" required id="Phone Number">
+                        <hr>
+                        <label for="Email">Email*</label>
+                        <input type="email" placeholder="Enter your e-mail" required id="Email">
+                        <hr>
+                        <label for="location">Pick your location*</label>
+                        <select name="location" id="location" required>
+                            <option value="">--Select location--<option>
+                            <option value="online">Online</option>
+                            <option value="onsite">Onsite</option>
+                        </select>
+                        <label for="field">Interest Field*</label>
+                        <select name="field" id="field" required>
+                            <option value="">--Please select--</option>
+                            <option value="">Web development</option>
+                            <option value="">Software development</option>
+                            <option value="">Data analyst</option>
+                            <option value="">UX/UI design</option>
+                        </select>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <div class="colm-left">
+                    <h2>Your Path to Success Start Here</h2>
+                    <p>Register now!</p>
+                    <div><img src="assets/programming-background-collage.jpg" alt="img" style="height: 200px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
      <!-- Fotter Section -->
-     <footer id="main-footer">
-        <div class="footer-container">
-            <h2 style="color: black;">Contact Us</h2>
-            <p><i class="fa fa-envelope" style="font-size:16px; color: black;"></i> innoliz@yahoo.com</p>
-            <p><i class="fa fa-phone" style="font-size:16px; color: black;"></i> +234-2223-3333</p>
-            <div class="footer-links">
-                 <a href=""><i class="fa fa-twitter" style="font-size:36px; color: white;"></i></a>
-                 <a href=""><i class="fa fa-facebook" style="font-size:36px; color: white;"></i></a>
-                 <a href="https://www.linkedin.com/company/innoliz-tech-hub/"><i class="fa fa-linkedin" style="font-size:36px; color: white;"></i></a>
-                 <a href=""><i class="fa fa-instagram" style="font-size:36px; color: white;"></i></a>
-             </div>
-             <p style="color: black;">© 2024 All Rights Reserved</p>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-columns">
+                 <div class="footer-logo-column">
+                     <a href="/index.html" title="go to innoliz homepage">
+                         <img src="/assets/Innologo.png" alt="Innologo" class="footer-logo">
+                     </a>
+                     <div class="social-links">
+                         <ul>
+                             <li>
+                                 <a href=""><i class="fa fa-twitter"></i></a>
+                             </li>
+                             <li>
+                                 <a href=""><i class="fa fa-facebook"></i></a>
+                             </li>
+                             <li>
+                                 <a href="https://www.linkedin.com/company/innoliz-tech-hub/"><i class="fa fa-linkedin"></i></a>
+                             </li>
+                             <li>
+                                 <a href=""><i class="fa fa-instagram"></i></a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="link-columns">
+                     <section>
+                         <h3>Product</h3>
+                         <ul>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                         </ul>
+                     </section>
+                     <section>
+                         <h3>Blog</h3>
+                         <ul>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                         </ul>
+                     </section>
+                     <section>
+                         <h3>About us</h3>
+                         <ul>
+                             <li>
+                                 <a href="#">Contact Us</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                             <li>
+                                 <a href="#">Database</a>
+                             </li>
+                         </ul>
+                     </section>
+                 </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+         <div class="footer-bottom-wrapper">
+             <small>© 2024 All Rights Reserved Innovative Elizabeth.</small>
+         </div>
         </div>
      </footer>
+</body>
+</html>
